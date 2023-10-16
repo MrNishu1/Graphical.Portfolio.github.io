@@ -121,7 +121,7 @@ span {
       align-items: center;
       grid-gap: 2em;
       top: -25px;
-      margin: 300px 450px;
+      margin: 300px 400px;
 
       /* ---------------------------------------------------------------------------------- */
 
@@ -891,25 +891,7 @@ a.btn:nth-child(2)::before {
 
 
 
-/* ----------------------------------------------CSS FOR SMALL SCREEN-------------------------------------- */
 
-@media (max-width: 600px) {
-
-      header {
-            background: black;
-            position: fixed;
-            top: 5px;
-            height: 11vh;
-            display: flex;
-            align-items: center;
-            align-self: center;
-            justify-content: space-between;
-            width: 100%;
-            padding: 30px 10px;
-
-      }
-
-  
 .WhatBtn{
       display: sticky;
       position: fixed;
@@ -917,7 +899,7 @@ a.btn:nth-child(2)::before {
       top: 40%;
       left: 5%;
       justify-content: center;
-      font-size: 3rem;
+      font-size: 3em;
       text-shadow: #12f7ff;
       cursor: pointer;
       z-index: 9999;
@@ -936,13 +918,14 @@ a.btn:nth-child(2)::before {
 }
 
 .WhatBtn:hover{
-      text-shadow: #12f7ff;
+      box-shadow: #12f7ff;
       transform: scale(1.1 );
       transition: 1s;
 }
 
 
 
-}
+
+
 
 

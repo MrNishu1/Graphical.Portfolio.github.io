@@ -929,8 +929,8 @@ a.btn:nth-child(2)::before {
       position: fixed;
       color: #12f7ff;
       top: 40%;
-      left: 2%;
-      font-size: 8em;
+      left: 20%;
+      font-size: 18em;
       text-shadow: #12f7ff;
       cursor: pointer;
 }

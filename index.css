@@ -59,7 +59,7 @@ header {
             position: fixed;
             top: 50px;
             left: 70px;
-            font-size: 100rem;
+            font-size: rem;
             font-weight: 700;
             letter-spacing: 1px;
 }

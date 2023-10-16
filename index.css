@@ -590,7 +590,7 @@ a.btn:nth-child(2)::before {
 .skills-bar .bar span {
 
       width: 25%;
-      height: 1.3%;
+      height: .67%;
       position: absolute;
       left: 0;
       background: var(--hover-color);

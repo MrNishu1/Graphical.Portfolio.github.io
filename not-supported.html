@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Supported</title>
+    <script>
+        // JavaScript to restrict the web page on mobile devices
+        function restrictMobileDevices() {
+              var userAgent = navigator.userAgent;
+  
+              // List of keywords typically found in mobile user agents
+              var mobileKeywords = ["Android", "webOS", "iPhone", "iPad", "iPod", "BlackBerry", "IEMobile", "Opera Mini"];
+  
+              for (var i = 0; i < mobileKeywords.length; i++) {
+                    if (userAgent.indexOf(mobileKeywords[i]) !== -1) {
+                          // If a mobile keyword is found in the user agent, redirect to a different page or display a message
+                          // Replace 'not-supported.html' with the page you want to redirect to
+                          window.location.href = 'not-supported.html';
+                          return;
+                    }else{
+                        window.location.href = 'index.html';
+                    }
+              }
+        }
+  
+        // Call the function on page load
+        window.onload = restrictMobileDevices;
+  </script>
+</head>
+<body>
+    <h1>Desktop Khreedo Garreboo desktoppppppppppppppppppppppp itna budget nahi hai merepaas ki website responsive banau</h1>
+</body>
+</html>

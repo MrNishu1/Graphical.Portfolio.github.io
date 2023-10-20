@@ -1,450 +1,454 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+      <!DOCTYPE html>
+      <html lang="en">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Graphical Portfolio</title>
       <link rel="stylesheet" href="index.css">
-      <title>My Portfolio</title>
       <script src="https://kit.fontawesome.com/075fd4ed16.js" crossorigin="anonymous"></script>
-</head>
+      <script src="https://kit.fontawesome.com/075fd4ed16.js" crossorigin="anonymous"></script>
 
-<body>
+      <script>
+            // JavaScript to restrict the web page on mobile devices
+            function restrictMobileDevices() {
+                  var userAgent = navigator.userAgent;
 
-      <div id="header">
-            <div class="container">
-                  <nav>
-                        <div class="personalDiv">
+                  // List of keywords typically found in mobile user agents
+                  var mobileKeywords = ["Android", "webOS", "iPhone", "iPad", "iPod", "BlackBerry", "IEMobile", "Opera Mini"];
 
-                        </div>
-                        <!-- <img src="images/My logo.jpg" alt="#" class="logo"> -->
-                        <ul id="SideMenu"> 
-                              <li><a href="#header">Home</a></li>
-                              <li><a href="#about">About</a></li>
-                              <li><a href="#Services">Services</a></li>
-                              <li><a href="#Portfolio">Projects</a></li>
-                              <li><a href="#contact">Contact</a></li>
-                              <li><a href="#footer">Footer</a></li>
-                              <i class="fa-solid fa-xmark" onclick="CloseMenu()"></i>
+                  for (var i = 0; i < mobileKeywords.length; i++) {
+                        if (userAgent.indexOf(mobileKeywords[i]) !== -1) {
+                              // If a mobile keyword is found in the user agent, redirect to a different page or display a message
+                              // Replace 'not-supported.html' with the page you want to redirect to
+                              window.location.href = 'not-supported.html';
+                              return;
+                        }
+                  }
+            }
+
+            // Call the function on page load
+            window.onload = restrictMobileDevices;
+      </script>
+
+      </head>
+
+      <body>
+            <!-- <h1>This web page is not supported on mobile devices.</h1> -->
+
+            <body>
+
+                  <header>
+                        <div class="logo">Nishant <span> Kumar</span></div>
+
+
+                        <ul class="navlist">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">My Services</a></li>
+                              <li><a href="#">My Skills</a></li>
+                              <li><a href="#">My Designs</a></li>
+
                         </ul>
-                        <i class="fa-solid fa-bars" onclick="OpenMenu()"></i>
-                  </nav>
-                  <div class="header-text" style="display: inline-block;">
-                        <p>Full Stack Web Developer</p>
-                        <h1>Hi, I'm <span>Nishant Kumar</span></h1>
-                        <div class="coverimage"></div>
-                  </div>
-            </div>
-
-      </div>
-
-      <a href="https://wa.me/+919056966809">
-            <div class="WhatBtn"><i class="fa-brands fa-whatsapp wp"></i></div>
-      </a>
+                  </header>
 
 
-      <!-- -------------------------------ABOUT------------------------------------- -->
-      <div id="about">
-            <div class="container">
-                  <div class="row">
-                        <div class="about-col-1">
-                              <img src="image/About_Picture.jpg"
-                                    style="display: flex; height: 62vh; position: relative ;top:-10%;">
-                        </div>
-                        <div class="about-col-2">
-                              <h1 class="Sub-title">About me</h1>
-                              <p>
-                                    Hi there, I'm Nishant Kumar and I am currently pursuing Becholers Degree in
-                                    Computer Science & Engineering at DAV University. I am delighted to have the
-                                    opportunity to introduce myself to you.
-                                    Engineering has always been a passion of mine, and I am committed to becoming a
-                                    well-rounded engineer who can address complex challenges with innovative solutions.
-                                    During my academic journey, I have developed a strong foundation in Full Stack Web
-                                    Development and UI/UX Designing, which I believe will serve as a solid
-                                    platform for my future endeavors.
-                                    I am always excited about the possibilities that lie ahead in my engineering
-                                    journey, and I am committed to making a meaningful contribution to the field. I look
-                                    forward to engaging with all of you and learning from your experiences. Thank you
-                                    for your time and attention.
-                                    Please feel free to reach out to me if you have any questions or if there are
-                                    opportunities for collaboration or discussion. I can be reached at my contact given
-                                    below.
-                                    Thank you once again, and I look forward to our interactions.</p>
-                              <div class="tab-titles">
-                                    <p class="tab-links acitve-links" onclick="opentab('Aims')">Aim</p>
-                                    <p class="tab-links" onclick="opentab('skill')">Skills</p>
-                                    <p class="tab-links" onclick="opentab('Project')">Projects</p>
-                                    <p class="tab-links" onclick="opentab('Experiences')">Experience</p>
-                                    <p class="tab-links" onclick="opentab('Educations')">Education</p>
+                  <a href="https://wa.me/+919056966809">
+                        <div class="WhatBtn"><i class="fa-brands fa-whatsapp wp"></i></div>
+                  </a>
+
+
+                  <section id="home" class="home">
+                        <div class="home-content">
+                              <h1>Hi I'm Nishant Kumar</h1>
+                              <div class="change-text">
+                                    <h3>I'm a</h3>
+                                    <h3>
+                                          <span class="word">Graphic&nbsp;Designer</span>
+                                          <span class="word">Web&nbsp;Designer</span>
+                                          <span class="word">UX/UI&nbsp;Developer</span>
+                                    </h3>
                               </div>
 
-
-                              <!-- ------------------------------------------AIM--------------------------------------------------------- -->
-
-                              <div class="tab-contents acitve-tab" id="Aims">
-                                    <ul>
-                                          <li><span>Achieve Goals</span><br>The aim of my life is to achieve those every
-                                                dream which i dreamed with open eyes and to full fill my parents
-                                                expectations from me and give my family a better life to live
-                                                hapilly.<br></li><br>
+                              <p>Hi there, I'm Nishant Kumar currently pursuing a Bachelor’s Degree in
+                                    Computer Science & Engineering at DAV University. I’m delighted to
+                                    have the opportunity to introduce myself to you. I am always excited
+                                    about the possibilities that lie ahead in my engineering journey, and I am
+                                    committed to make a meaningful contribution..</p>
 
 
-                                    </ul>
-                              </div>
+                              <div class="info-box">
 
+                                    <div class="email-info">
 
-                              <!-- ------------------------------------------skills--------------------------------------------------------- -->
+                                          <h5 style="font-size: 1rem; position: relative; top: 45px; left: -20;">Email: </h5>
+                                          <span
+                                                style="font-size: 1rem; position: relative; top: 45px; left: -20;">k.nishantt@yahoo.com</span>
 
-
-                              <div class="tab-contents " id="skill">
-                                    <ul>
-                                          <li><span>Full Stack</span> <br>Creating complete Website Front-End to
-                                                Back-End
-                                                using Django in Python<br></li><br>
-
-                                          <li><span>UI/UX</span><br>Designing Window App Interface using Tkinter in
-                                                Python</li><br>
-
-                                          <li><span>Database</span><br>Connectivity of Database in MySql and Python</li>
-                                          <br>
-
-                                          <li><span>Photoshop</span><br>Designing poster designs, logo designs, online
-                                                invitation cards, greeting cards of a better quality. </li>
-                                    </ul>
-                              </div>
-
-
-                              <!-- ------------------------------------------Project--------------------------------------------------------- -->
-
-
-                              <div class="tab-contents" id="Project">
-                                    <ul>
-                                          <li><span>Bike Selling</span> <br>This is a Bike Selling Reference website
-                                                using ( Front-End HTML, CSS, JS and Back-End Django python)<br></li><br>
-
-                                          <li><span>Chat Application</span><br>This is a One to One chat application
-                                                using( Tkinter python)</li><br>
-
-                                          <li><span>Portfolio</span><br>I built my own portfolio because, a professional
-                                                portfolio is an excellent way to present the introduction in a
-                                                proffessional way. </li>
-                                    </ul>
-                              </div>
-
-
-
-
-
-                              <div class="tab-contents" id="Experiences">
-                                    <ul>
-                                          <li><span>Fresher</span> <br>As I'm a fresher i don't have any professional
-                                                work experience in a reputated company
-                                                yet but i've done some industrial training during the summer vaccation
-                                                of the university <br></li><br>
-
-                                          <li><span>Core Python</span><br>I've done the industrial training in core
-                                                python from Netmax technologies, Chandigarh. I've created a project
-                                                during this industrial training which is a desktop chat application
-                                                named as ChatApp which is an one-to-one chat application, which allows
-                                                you to chat with a single person at a time, the technologies used in
-                                                this
-                                                project are <span>Tkinter ( Python's
-                                                      frame work )</span>.</li><br>
-
-                                          <li><span>Full Stack Development</span> <br>I've done the industrial training
-                                                in
-                                                Full Stack Development from Netmax technologies, Chandigarh. I've
-                                                created a project during this industrial training which is basically a
-                                                reference website by which you can choose
-                                                your dream bike and can buy named as BikeWalah,
-                                                the technologies used in this project are
-                                                <span>HTML, CSS and JS</span> ( for Front-End ) and <span>Django</span>
-                                                ( for Back-End ) <br>
-                                          </li>
-                                    </ul>
-                              </div>
-
-
-
-
-                              <div class="tab-contents" id="Educations">
-                                    <ul>
-                                          <li><span>Becholers Degree</span> <br>
-                                                B.Tech ( CSE ) from DAV University (Pursuing in last year), will
-                                                complete in july, 2024 <br></li><br>
-
-                                          <li><span>Senior Secondary</span><br>March, 2020 from
-                                                DS. SD. SR. SEC. School
-                                                I got 79% marks in my senior secondary education, and I passed out
-                                                senior secondary education from
-                                                Punjab School Education Board. </li><br>
-
-                                          <li><span>Matriculation</span><br>March, 2018 from
-                                                DS. SD. SR. SEC. School
-                                                I got 54% marks in my Matriculation education, and I passed out
-                                                Matriculation education from
-                                                Punjab School Education Board.</li>
-                                    </ul>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </div>
-
-
-      <!-- ----------------------------------Aim-------------------------------------------- -->
-      <div id="Services">
-            <div class="container">
-                  <h1 class="Sub-title">My Services</h1>
-                  <div class="Services-list">
-                        <div>
-                              <i class="fa-solid fa-code"></i>
-                              <h2>Front-End</h2>
-                              <p>I'm a Front-End Developer, I create an interactive user Interface for the coustmers and
-                                    ensuring an appealing user interface, responsive design, This involves working with
-                                    HTML, CSS, JavaScript, frontend frameworks, and libraries, as well as focusing on
-                                    accessibility, cross-browser compatibility, and performance optimization. </p>
-                              <!-- <a href="#">Learn more</a> -->
-                        </div>
-
-
-                        <div>
-                              <i class="fa-brands fa-python"></i>
-                              <h2>Back-End </h2>
-                              <p>I also deal with Back-End, This involves Data handling, server logic, APIs, database
-                                    management, security, scalability, optimization in Django python's Framework</p>
-                              <!-- <a href="#">Learn more</a> -->
-                        </div>
-
-
-                        <div>
-                              <i class="fa-solid fa-crop"></i>
-                              <h2>UI/UX</h2>
-                              <p>
-                                    I've specializes in creating user-friendly, visually appealing
-                                    interfaces. I focus on user experience (UX) and user interface (UI) design,
-                                    aiming to enhance the usability and overall satisfaction of digital products, such
-                                    as websites and windows apps. My responsibilities include wireframing,
-                                    prototyping, designing layouts, selecting color schemes, creating icons, and
-                                    ensuring intuitive navigation.</p>
-                              <!-- <a href="#">Learn more</a> -->
-                        </div>
-
-
-                        <div>
-                              <i class="fa-solid fa-pen-nib"></i>
-                              <h2>Photoshop</h2>
-                              <p>Designing poster designs, logo designs, online
-                                    invitation cards, greeting cards of a better quality.</p>
-                              <!-- <a href="#">Learn more</a> -->
-                        </div>
-
-
-                  </div>
-
-            </div>
-      </div>
-
-
-
-      <!-- ----------------------------------Porfolio -------------------------------------------- -->
-
-      <div id="Portfolio">
-            <div class="container">
-                  <h1 class="Sub-title">My Projects</h1>
-                  <h3>Bike Selling reference website</h3>
-                  <div class="project-list">
-
-                        <div class="project">
-                              <img src="image/Screenshot 2023-10-19 103256.png">
-                              <div class="layer">
-                                    <h3>Landing Page</h3>
-                                    <p>This is the Landing Page of my Website, where you can see all the
-                                          functionalities.</p>
-                                    <!-- <a href=""><i class="fa-solid fa-link"></i></a> -->
-                              </div>
-                        </div>
-
-                        <div class="project">
-                              <img src="image/BikeWalah_SelectBike.png">
-                              <div class="layer">
-                                    <h3>Services Page</h3>
-                                    <p>This is the Services Page, where you can see what Services we give to our
-                                          coustomers.</p>
-                                    <!-- <a href=""><i class="fa-solid fa-link"></i></a> -->
-                              </div>
-                        </div>
-
-                        <div class="project data">
-                              <img src="image/BikeWalah_Data.png">
-                              <div class="layer">
-                                    <h3>Admin Page</h3>
-                                    <p>This is the Admin Page, only admin can see this page.</p>
-                                    <!-- <a href=""><i class="fa-solid fa-link"></i></a> -->
-                              </div>
-                        </div>
-
-                  </div>
-
-                  <br><br><br><br><br><br><br>
-                  <div class="container2">
-                        <h1 class="Sub-title2">My Projects</h1>
-                        <h3>one-to-one chat application</h3>
-
-                        <div class="project-list2">
-
-                              <div class="project2">
-                                    <img src="image/ChatLogin.png">
-                                    <div class="layer">
-                                          <h3>Login Page</h3>
-                                          <p>This is the Login Page of my one-to-one chat application, Login is required
-                                                to go on the chat screen</p>
-                                          <!-- <a href=""><i class="fa-solid fa-link"></i></a> -->
+                                          <h5 style="font-size: 1rem; position: relative; top: 70px; left: -20;">Phone: </h5>
+                                          <span style="font-size: 1rem; position: relative; top: 70px; left: -20;">+91
+                                                9056966809</span>
                                     </div>
-                              </div>
 
-                              <div class="project2">
-                                    <img src="image/Chat_App_Signup.png">
-                                    <div class="layer">
-                                          <h3>Signup Page</h3>
-                                          <p>This is the Sign Up Page, if you are new on the application you may
-                                                register yourslf by providing some basic information.
-                                          </p>
-                                          <!-- <a href=""><i class="fa-solid fa-link"></i></a> -->
+                                    <div class="btn-box">
+                                          <a href="image/My_Resume/MyProjects.pdf" class="btn" download>My Projects</a>
+                                          <a href="image/My_Resume/My Graphical Resume 2 (2).jpg" class="btn"
+                                                download>Download
+                                                CV</a>
+                                          <!-- <a href="" class="btn">Download Genral CV</a> -->
                                     </div>
-                              </div>
-
-                              <div class="project2">
-                                    <img src="image/Chat.png">
-                                    <div class="layer">
-                                          <h3>Chat Window</h3>
-                                          <p>This is the Chat Window, where you can chat with others.
-                                          </p>
-                                          <!-- <a href=""><i class="fa-solid fa-link"></i></a> -->
-                                    </div>
-                              </div>
-
-                        </div>
-                  </div>
-            </div>
-
-
-            <!-- --------------------------------------Contact-------------------------------------------- -->
-
-            <div id="contact">
-                  <div class="container">
-                        <div class="row">
-                              <div class="contact-left">
-                                    <h1 class="Sub-title">Contact Me</h1>
-                                    <p><i class="fa-solid fa-paper-plane"></i> k.nishantt@yahoo.com</p>
-                                    <p><i class="fa-solid fa-phone-volume"></i> +91 90569 66809</p>
                                     <div class="social-icons">
-                                          <a href="https://www.linkedin.com/in/nishant-kumar-31ba08282"><i
-                                                      class="fa-brands fa-linkedin"></i></a>
-                                          <a
-                                                href="https://www.facebook.com/profile.php?id=100012442231727&mibextid=LQQJ4d"><i
-                                                      class="fa-brands fa-facebook"></i></a>
-                                          <a href="https://instagram.com/mr.nishuu?igshid=OGQ5ZDc2ODk2ZA=="><i
-                                                      class="fa-brands fa-instagram"></i></a>
-
+                                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                                     </div>
-                                    <a href="images/My Resume.pdf" download class="btn btn2">My CV</a>
-                                    <a href="image/My Graphical Resume 2 (3).jpg" download class="btn btn2">My Graphical
-                                          CV</a>
-
-
-
 
                               </div>
-                              <div class="contact-right">
 
-                                    <form name="submit-to-google-sheet">
-                                          <input type="text" name="Name" placeholder="Your Name" required>
-                                          <input type="email" name="E-Mail" placeholder="Your Email" required>
-                                          <textarea name="Message" rows="6" placeholder="Your Message"
-                                                required></textarea>
-                                          <button type="submit" class="btn btn2 ">Submit</button>
-                                    </form>
-
-                                    <span id="msg">
-
-                                    </span>
-
+                              <div class="home-image">
+                                    <div class="mydiv">
+                                          <div class="img-box">
+                                                <img src="image/My_Pic.jpg" alt="" class="MyImg">
+                                          </div>
+                                    </div>
                               </div>
                         </div>
 
 
+
+                  </section>
+
+
+
+
+                  <!-- <div id="menu-icon" class="fa-solid fa-bars"></div> -->
+
+
+
+                  <!-- ---------------------Services---------------------------- -->
+
+                  <section id="#MySer" class="Services">
+                        <div class="main-text">
+                              <span></span>
+                              <h2>My Services</h2>
+                        </div>
+
+                        <div class="section-services">
+
+
+                              <div class="services-box">
+                                    <i class="fa-solid fa-pen-nib services-icon"></i>
+                                    <h3>Graphic Designer</h3>
+                                    <p>I'm a visionary graphic artist known for innovation, precision, and
+                                          versatile designs. With a knack for visual storytelling, they bring ideas to life
+                                          with
+                                          style and impact. '</p>
+
+
+                              </div>
+
+
+                              <div class="services-box">
+                                    <i class="fa-solid fa-code services-icon"></i>
+                                    <h3>Web Developer</h3>
+                                    <p>I'm a web developer with a passion for crafting the digital
+                                          world. With expertise in coding, i transforms visions into dynamic,
+                                          user-friendly websites that seamlessly blend form and function.</p>
+
+
+                              </div>
+
+
+                              <div class="services-box">
+                                    <i class="fa-solid fa-code services-icon"></i>
+                                    <h3>UX/UI Designer</h3>
+                                    <p>I'm, a UX/UI Designer with a talent for user-centric design,
+                                          and prototyping. My work combines aesthetics with functionality, creating
+                                          captivating
+                                          digital experiences.</p>
+
+
+                              </div>
+
+
+                        </div>
+
+                  </section>
+
+                  <!-- ---------------------skills---------------------------- -->
+
+                  <section id="#MySki" class="skills">
+
+                        <div class="main-text">
+                              <!-- <span>Technical and Professional</span> -->
+                              <h2>My Skills</h2>
+
+
+                              <div class="skills-main">
+                                    <div class="skills-left">
+                                          <h3>Technical Skills</h3>
+
+
+                                          <div class="skills-bar">
+                                                <div class="info">
+                                                      <p class="spl-txt
+                                                ">HTML</p>
+                                                      <p class="spl">70%</p>
+                                                </div>
+                                                <div class="bar spl-bar">
+                                                      <span class="HTML"></span>
+                                                </div>
+                                          </div>
+
+
+                                          <div class="skills-bar">
+                                                <div class="info">
+                                                      <p class="spl-txt
+                                                ">CSS</p>
+                                                      <p class="spl">50%</p>
+                                                </div>
+                                                <div class="bar spl-bar2">
+                                                      <span class="CSS"></span>
+                                                </div>
+                                          </div>
+
+
+                                          <div class="skills-bar">
+                                                <div class="info">
+                                                      <p class="spl-txt
+                                                ">JavaScript</p>
+                                                      <p class="spl">10%</p>
+                                                </div>
+                                                <div class="bar spl-bar3">
+                                                      <span class="JavaScript "></span>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                                    <div class="skills-right">
+                                          <h3>Professional Skills</h3>
+
+                                    </div>
+                              </div>
+
+                              <div class="professional">
+
+
+                                    <div class="box box-shape ist-box-shape">
+                                          <div class="circle" data-dots="90" data-percent="90">
+                                                <!-- <div class="points" style="--i:1;"></div>
+                                          <div class="points" style="--i:2;"></div>
+                                          <div class="points" style="--i:3;"></div> -->
+                                          </div>
+                                          <div class="text">
+                                                <big class="big-cls">90%</big>
+                                                <small sml-txt>Team Work</small>
+                                          </div>
+                                    </div>
+
+
+                                    <div class="box box-shape ">
+                                          <div class="circle" data-dots="80" data-percent="70">
+                                                <!-- <div class="points" style="--i:1;"></div>
+                                          <div class="points" style="--i:2;"></div>
+                                          <div class="points" style="--i:3;"></div> -->
+                                          </div>
+                                          <div class="text">
+                                                <big class="big-cls">70%</big>
+                                                <small sml-txt>Creativity</small>
+                                          </div>
+                                    </div>
+
+
+                                    <div class="box box-shape ist-box-shape">
+                                          <div class="circle" data-dots="80" data-percent="70"></div>
+
+                                          <div class="text">
+                                                <big class="big-cls">70%</big>
+                                                <small sml-txt>Communication</small>
+                                          </div>
+                                    </div>
+
+
+                                    <div class="box box-shape ">
+                                          <div class="circle" data-dots="80" data-percent="70">
+                                                <!-- <div class="points" style="--i:1;"></div>
+                                          <div class="points" style="--i:2;"></div>
+                                          <div class="points" style="--i:3;"></div> -->
+                                          </div>
+                                          <div class="text">
+                                                <big class="big-cls">70%</big>
+                                                <small sml-txt>Project Management</small>
+                                          </div>
+                                    </div>
+
+
+
+                              </div>
+                        </div>
+
+                  </section>
+
+
+                  <!-- n------------------------------------------------------------------------------  -->
+
+                  <div id="about">
+                        <div class="container" id="#MyDes">
+                              <div class="row">
+
+                                    <div class="about-col-2">
+                                          <h1 class="Sub-title">My Projects</h1>
+
+                                          <div class="tab-titles">
+                                                <p class="tab-links acitve-links" onclick="opentab('Aims')">Poster Designs</p>
+                                                <p class="tab-links" onclick="opentab('skill')">Advertisement Designs</p>
+                                                <p class="tab-links" onclick="opentab('Project')">Logo Designs</p>
+
+                                          </div>
+
+
+                                          <!-- ------------------------------------------AIM--------------------------------------------------------- -->
+
+                                          <div class="tab-contents acitve-tab" id="Aims">
+
+                                                <section class="Services-container">
+
+
+                                                      <br><br><br> <br> <br> <br>
+                                                      <div id="services">
+                                                            <div class="box">
+                                                                  <img src="image/Poster/Poster-1.jpg" alt="#">
+                                                                  <h2 class="h-secondary center"></h2>
+                                                                  <p class="center"></p>
+                                                            </div>
+
+
+
+                                                            <div class="spl-bx">
+                                                                  <img src="image/Poster/Poster-2.jpg" alt="#" class="spl-bx"
+                                                                        style="position: relative; top: 5px; height: 78%; width: 35vw; border:
+                                                                  5px solid #12f7ff; border-radius: 25px;">
+                                                                  <h2 class="h-secondary center"></h2>
+                                                                  <p class="center"></p>
+                                                            </div>
+                                                      </div>
+                                                </section>
+
+
+                                                <section class="Services-container">
+
+
+
+
+
+                                          </div>
+
+
+                                          <!-- ------------------------------------------skills--------------------------------------------------------- -->
+
+
+                                          <div class="tab-contents " id="skill">
+
+                                                <section class="Services-container">
+
+
+                                                      <br><br><br> <br> <br> <br>
+
+                                                      <div id="services">
+                                                            <div class="box">
+                                                                  <img src="image/Advertisement/Advertisement-4.jpg" alt="#">
+                                                                  <h2 class="h-secondary center"></h2>
+                                                                  <p class="center"></p>
+                                                            </div>
+
+
+                                                            <div class="box">
+                                                                  <img src="image/Advertisement/Advertisement-3.jpg" alt="#">
+                                                                  <h2 class="h-secondary center"></h2>
+                                                                  <p class="center"></p>
+                                                            </div>
+
+
+
+
+                                                      </div>
+                                                </section>
+
+                                                <section class="Services-container">
+
+
+
+                                                </section>
+                                                <section class="Services-container">
+
+                                          </div>
+
+
+                                          <!-- ------------------------------------------Project--------------------------------------------------------- -->
+
+
+                                          <div class="tab-contents" id="Project">
+                                                <section class="Services-container">
+
+
+                                                      <br><br><br> <br> <br> <br>
+                                                      <div id="services">
+                                                            <div class="box">
+                                                                  <img src="image/Logos/Logo-1.jpg" alt="#">
+                                                                  <h2 class="h-secondary center"></h2>
+                                                                  <p class="center"></p>
+                                                            </div>
+
+
+
+                                                            <div class="box">
+                                                                  <img src="image/Logos/Logo-2.jpg" alt="#">
+                                                                  <h2 class="h-secondary center"></h2>
+                                                                  <p class="center"></p>
+                                                            </div>
+                                                      </div>
+                                                </section>
+
+
+                                                <section class="Services-container">
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
                   </div>
 
-                  <div class="copyright">
-
-                  </div>
-
-            </div>
 
 
 
 
 
-            <script>
 
-                  var tablinks = document.getElementsByClassName("tab-links");
-                  var tabcontents = document.getElementsByClassName("tab-contents");
 
-                  function opentab(tabname) {
-                        for (tablink of tablinks) {
-                              tablink.classList.remove("acitve-links");
+                  </section>
+
+                  <script>
+
+                        var tablinks = document.getElementsByClassName("tab-links");
+                        var tabcontents = document.getElementsByClassName("tab-contents");
+
+                        function opentab(tabname) {
+                              for (tablink of tablinks) {
+                                    tablink.classList.remove("acitve-links");
+                              }
+
+
+                              for (tabcontent of tabcontents) {
+                                    tabcontent.classList.remove("acitve-tab");
+                              }
+
+                              event.currentTarget.classList.add("acitve-links")
+                              document.getElementById(tabname).classList.add("acitve-tab");
                         }
 
+                  </script>
 
-                        for (tabcontent of tabcontents) {
-                              tabcontent.classList.remove("acitve-tab");
-                        }
-
-                        event.currentTarget.classList.add("acitve-links")
-                        document.getElementById(tabname).classList.add("acitve-tab");
-                  }
-
-            </script>
-
-            <script>
-
-                  var SideMenu = document.getElementById("SideMenu");
-                  function OpenMenu() {
-                        SideMenu.style.right = "0";
-                  }
-                  function CloseMenu() {
-                        SideMenu.style.right = "-200px";
-                  }
-
-            </script>
-
-            <script>
-                  const scriptURL = 'https://script.google.com/macros/s/AKfycbzufubIB7lH1NWXVQ_eoElSSM8Jcx6jnDG4Cc-5OdamrTTEMKiLErlw16yEXtysELeR/exec'
-                  const form = document.forms['submit-to-google-sheet']
-                  const msg = document.getElementById("msg")
+                  <script src="script.js"></script>
 
 
-                  form.addEventListener('submit', e => {
-                        e.preventDefault()
-                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                              .then(response => {
-                                    msg.innerHTML = "Message Sent Successfully"
-                                    setTimeout(function () {
-                                          msg.innerHTML = ""
-                                    }, 5000)
-                                    form.reset()
-                              })
-                              .catch(error => console.error('Error!', error.message))
-                  })
-            </script>
+            </body>
 
-            <footer id="footer">
-                  <div class="footer">
-                        <img src="image/My LinkedIn Cover Page .jpg">
-                  </div>
-            </footer>
-
-</body>
-
-</html>
+      </html>
